@@ -3,7 +3,7 @@ const Title = () => {
     return (
         
         <div className="search-bar">
-            This is Title
+            <h1>My Contacts</h1>
         </div>
     );
 };

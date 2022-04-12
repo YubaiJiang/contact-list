@@ -7,7 +7,6 @@ const ContactPanel = () => {
     return (
         
         <div className="contact-panel">
-            This is ContactPanel
             <Title />
             <SearchBar />
             <ContactList />
