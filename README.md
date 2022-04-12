@@ -6,7 +6,7 @@ Once you have cloned or downloaded a zip file of the repository to your local ma
 
 **NOTE:** if at any time you are unable to run an executable, please ensure you have the relevant permissions activated on your machine.
 
-### Installing Node.js
+### Installing Node.js and React.js
 
 The following are installation instructions for getting the frontend application to launch.
 
