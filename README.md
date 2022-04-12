@@ -26,6 +26,12 @@ $ npm -v
 8.5.0
 ```
 
+After Node.js has been installed, now install React.js by this command:
+
+```
+$ npm install react
+```
+
 ### Run App
 
 In project directory, run the following command in terminal:
