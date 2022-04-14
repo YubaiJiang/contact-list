@@ -7,7 +7,7 @@ const ContactList = (props) => {
 
     const contacts = displayArr.map(
         (contact) =>
-            <tr>
+            <tr key={contact.id}>
                 <td><b>{contact.name}</b><br/>{contact.phone}<br/>{contact.email}</td>
                 <td><i>{contact.username}</i><br/>{contact.website}</td>
                 <td>{contact.company.name}<br/><i>"{contact.company.catchPhrase}"<br/>{contact.company.bs}</i></td>
@@ -26,16 +26,18 @@ const ContactList = (props) => {
       {displayArr.length > 0 && 
         <div className="contact-list">
             <table className="table">
-
+                <thead>
                 <tr className="table-header">
                     <th>Contact Details</th>
                     <th>User Details</th>
                     <th>Company</th>
                     <th>Address</th>
                 </tr>
-                
+                </thead>
+
+                <tbody>
                 {contacts}
-                
+                </tbody>
 
             </table>
         </div>

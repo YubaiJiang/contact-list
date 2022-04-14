@@ -21,6 +21,8 @@ const ContactPanel = () => {
             let contact = contactArr[i];
             for (let j = 0; j < keyWords.length; j++) {
                 let word = keyWords[j];
+                word = word.trim();
+                if (word === "") continue;
                 if (contact.name.includes(word) ||
                     contact.email.includes(word) ||
                     contact.phone.includes(word) ||
@@ -40,6 +42,8 @@ const ContactPanel = () => {
             }
         }
     }
+
+    if (dispArr.length === 0) dispArr = contactArr;
 
     return (
         
