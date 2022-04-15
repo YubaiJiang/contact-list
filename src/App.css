@@ -1,0 +1,8 @@
+.app-container {
+    border-style: double;
+    min-width: 800px;
+    min-height: 700px;
+    max-width: 1000px;
+    max-height: 800px;
+    overflow: scroll;
+}

@@ -1,0 +1,14 @@
+.table {
+    width: 100%;
+}
+
+.table-header {
+    background-color: black;
+    font-size: larger;
+    color: aliceblue;
+}
+
+.contact0 {
+    background-color:aqua;
+    color: black;
+}

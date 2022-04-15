@@ -1,13 +1,15 @@
 import {useState} from "react";
 
+import "./ContactList.css";
+
 
 const ContactList = (props) => {
 
   let displayArr = props.contacts;
 
     const contacts = displayArr.map(
-        (contact) =>
-            <tr key={contact.id}>
+        (contact, index) =>
+            <tr key={index} className = {"contact" + index%2}>
                 <td><b>{contact.name}</b><br/>{contact.phone}<br/>{contact.email}</td>
                 <td><i>{contact.username}</i><br/>{contact.website}</td>
                 <td>{contact.company.name}<br/><i>"{contact.company.catchPhrase}"<br/>{contact.company.bs}</i></td>
@@ -25,9 +27,9 @@ const ContactList = (props) => {
       }
       {displayArr.length > 0 && 
         <div className="contact-list">
-            <table className="table">
-                <thead>
-                <tr className="table-header">
+            <table>
+                <thead className="table-header">
+                <tr>
                     <th>Contact Details</th>
                     <th>User Details</th>
                     <th>Company</th>
@@ -35,7 +37,7 @@ const ContactList = (props) => {
                 </tr>
                 </thead>
 
-                <tbody>
+                <tbody className="table-body">
                 {contacts}
                 </tbody>
 

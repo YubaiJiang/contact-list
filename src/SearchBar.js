@@ -1,11 +1,10 @@
-
+import "./SearchBar.css"
 
 const SearchBar = (props) => {
 
     const handleSearchBar = () => {
         let input = document.getElementById("searchInput").value;
         props.setSearch(input);
-        console.log(input);
     }
 
     return (

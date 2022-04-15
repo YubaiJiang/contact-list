@@ -1,0 +1,8 @@
+.introduction {
+    font-style: italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-style: dashed;
+    padding: 5%;
+
+    background-color:cyan;
+}

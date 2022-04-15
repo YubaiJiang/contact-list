@@ -1,8 +1,10 @@
+import "./Title.css"
+
 const Title = () => {
 
     return (
         
-        <div className="search-bar">
+        <div className="title">
             <h1>My Contacts</h1>
         </div>
     );

@@ -3,6 +3,8 @@ import SearchBar from "./SearchBar"
 import ContactList from "./ContactList"
 import Title from "./Title"
 
+import "./ContactPanel.css"
+
 const ContactPanel = () => {
 
     const [contactArr, setContactArr] = useState([]);
@@ -21,20 +23,20 @@ const ContactPanel = () => {
             let contact = contactArr[i];
             for (let j = 0; j < keyWords.length; j++) {
                 let word = keyWords[j];
-                word = word.trim();
+                word = word.trim().toLowerCase();
                 if (word === "") continue;
-                if (contact.name.includes(word) ||
-                    contact.email.includes(word) ||
-                    contact.phone.includes(word) ||
-                    contact.username.includes(word) ||
-                    contact.website.includes(word) ||
-                    contact.address.street.includes(word) ||
-                    contact.address.suite.includes(word) ||
-                    contact.address.city.includes(word) ||
-                    contact.address.zipcode.includes(word) ||
-                    contact.company.name.includes(word) ||
-                    contact.company.catchPhrase.includes(word) ||
-                    contact.company.bs.includes(word)) {
+                if (contact.name.toLowerCase().includes(word) ||
+                    contact.email.toLowerCase().includes(word) ||
+                    contact.phone.toLowerCase().includes(word) ||
+                    contact.username.toLowerCase().includes(word) ||
+                    contact.website.toLowerCase().includes(word) ||
+                    contact.address.street.toLowerCase().includes(word) ||
+                    contact.address.suite.toLowerCase().includes(word) ||
+                    contact.address.city.toLowerCase().includes(word) ||
+                    contact.address.zipcode.toLowerCase().includes(word) ||
+                    contact.company.name.toLowerCase().includes(word) ||
+                    contact.company.catchPhrase.toLowerCase().includes(word) ||
+                    contact.company.bs.toLowerCase().includes(word)) {
                         dispArr.push(contact);
                         break;
                     }
