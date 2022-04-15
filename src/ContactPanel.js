@@ -47,6 +47,13 @@ const ContactPanel = () => {
 
     if (dispArr.length === 0) dispArr = contactArr;
 
+    dispArr.sort( function( a, b ) {
+        a = a.name.toLowerCase();
+        b = b.name.toLowerCase();
+    
+        return a < b ? -1 : a > b ? 1 : 0;
+    });
+
     return (
         
         <div className="contact-panel">
