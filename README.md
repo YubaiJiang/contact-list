@@ -2,7 +2,7 @@
 
 ## Project Installation
 
-Once you have cloned or downloaded a zip file of the repository to your local machine, ensure Python 3.8 and Node.js (instructions below) are installed.
+Once you have cloned or downloaded the repository to your local machine, ensure Python 3.8 and Node.js (instructions below) are installed.
 
 **NOTE:** if at any time you are unable to run an executable, please ensure you have the relevant permissions activated on your machine.
 
@@ -40,3 +40,7 @@ $ npm start
 ```
 
 The app would start in a few seconds.
+
+After app is started, interact with the app as shown in introduction section in the top section of the app.
+
+If you run into issues setting up the server, please build a new react project following tutorial on https://reactjs.org/tutorial/tutorial.html. Delete all files under <your-project>/src, and replace with files under <contact-app>/src from this repository.
