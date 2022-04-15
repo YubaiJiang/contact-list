@@ -1,4 +1,4 @@
-import {useState} from "react"
+import React, {useState} from "react"
 import SearchBar from "./SearchBar"
 import ContactList from "./ContactList"
 import Title from "./Title"

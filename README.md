@@ -44,3 +44,5 @@ The app would start in a few seconds.
 After app is started, interact with the app as shown in introduction section in the top section of the app.
 
 If you run into issues setting up the server, please build a new react project following tutorial on https://reactjs.org/tutorial/tutorial.html. Delete all files under <your-project>/src, and replace with files under <contact-app>/src from this repository.
+
+An deployed example is on https://yubaijiang.github.io/contact-list/
